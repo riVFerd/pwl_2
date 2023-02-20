@@ -13,3 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    return "Selamat Datang";
+});
+
+Route::get('/about', function () {
+    return "NIM : 2141720116 <br> Nama : Virgy Ferdian Surya Firmansyah";
+});
+
+Route::get("/articles/{id}", function ($id) {
+    return "Halaman artikel dengan ID " . $id;
+});
